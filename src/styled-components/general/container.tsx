@@ -9,10 +9,6 @@ const Container = styled.div`
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-
-    & > div{
-        margin-bottom: 20px;
-    }
 `
 
 export default Container
