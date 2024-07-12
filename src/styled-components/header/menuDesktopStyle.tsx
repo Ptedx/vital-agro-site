@@ -11,10 +11,15 @@ export const MenuDesktopStyle = styled.div`
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    
+    position: fixed;
+    top: 0;
+    z-index: 3;
     div a {
         padding: 0 20px;
         text-decoration: none;
         color: white;
+    }
+    img{
+        margin-top: 15px;
     }
 `

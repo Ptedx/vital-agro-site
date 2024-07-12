@@ -4,3 +4,10 @@
   box-sizing: border-box;
   font-family: sans-serif;
 }
+p, h1{
+  cursor: default;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 80px;
+}

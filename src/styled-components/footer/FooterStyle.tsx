@@ -8,7 +8,7 @@ const FooterStyle = styled.div`
     justify-content: space-around;
     align-items: center;
     text-align: center;
-    border-radius: 10px 10px 0 0;
+    padding: 5px 0;
     p{
         font-size: 14px;
     }
@@ -24,9 +24,8 @@ const FooterStyle = styled.div`
         }
     }
     @media (max-width: 570px) {
-        p{
-            font-size: 8px;
-        }
+       justify-content: center;
+       gap: 25px;
     }
 `
 

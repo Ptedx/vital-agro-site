@@ -63,4 +63,12 @@ export const ServiceCard = styled.div<ServiceItemProps>`
         transition: 0.5s;
         cursor: pointer;
     }
+
+    @media (max-width:768px) {
+        width: 100%;
+        margin-top: 10px;
+        & > p{
+            font-size: 30px;
+        }
+    }
 `

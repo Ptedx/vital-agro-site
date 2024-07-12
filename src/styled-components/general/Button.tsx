@@ -11,8 +11,10 @@ const ButtonStyle = styled.div<ButtonStyleProps>`
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     padding: 8px 0;
     font-size: ${({main = false})=> main ? '1em': '24px'};
+    box-shadow: 0 4px 4px rgba(0,0,0,0.3);
 
     a{
         width:100%;
@@ -23,8 +25,12 @@ const ButtonStyle = styled.div<ButtonStyleProps>`
     }
 
     &:hover{
-        transform: translateY(-5px);
-        transition: 0.5s;
+        transform: translateY(5px);
+        transition: 0.1s;
+        box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+    }
+    &:active{
+        background-color: #b2c331;
     }
 `
 

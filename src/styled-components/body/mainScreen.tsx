@@ -6,8 +6,13 @@ export const MainScreenStyle = styled.div`
     height: calc(100% - 80px);
     justify-content:center;
     align-items: center;
+    margin-top: 80px;
     margin-bottom: 20px;
     padding: 15px;
+
+    @media (max-width: 768px) {
+        flex-direction: column-reverse;
+    }
 `
 export const MainItem = styled.div`
     width: 50%;
@@ -34,5 +39,8 @@ export const MainItem = styled.div`
         p{
             margin-bottom: 10px;
         }
+    }
+    @media (max-width: 768px) {
+        width: 100%;
     }
 `
