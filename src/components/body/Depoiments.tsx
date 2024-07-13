@@ -1,4 +1,4 @@
-import { SectionDepoimentStyle, SwiperItem } from "./DepoimentStyle";
+import { SectionDepoimentStyle, SwiperItem } from "../../styled-components/body/DepoimentStyle"
 
 const Depoiments = ()=>{
     

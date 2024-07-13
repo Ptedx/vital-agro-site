@@ -10,6 +10,11 @@ export const MainScreenStyle = styled.div`
     margin-bottom: 20px;
     padding: 15px;
 
+    @media (min-width: 1200px) {
+        max-width: 1400px;
+        margin: 0 auto;
+        margin-top: 80px;
+    }
     @media (max-width: 768px) {
         flex-direction: column-reverse;
     }

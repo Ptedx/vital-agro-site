@@ -1,5 +1,11 @@
 import styled from "styled-components"
 
+export const MenuLayout = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`
+
 export const MenuDesktopStyle = styled.div`
     width: 100%;
     height: 80px;
@@ -10,7 +16,6 @@ export const MenuDesktopStyle = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
     position: fixed;
     top: 0;
     z-index: 3;
@@ -22,4 +27,8 @@ export const MenuDesktopStyle = styled.div`
     img{
         margin-top: 15px;
     }
+    @media (min-width: 1200px) {
+        max-width: 1400px;
+        border-radius: 0 0 10px 10px;
+}
 `

@@ -7,7 +7,7 @@ import MenuDesktop from './components/header/menuDesktop';
 import Container from './styled-components/general/container';
 import Loc from './components/body/Loc';
 import Footer from './components/footer/footer';
-import Depoiments from './styled-components/body/Depoiments';
+import Depoiments from './components/body/Depoiments';
 import MobileMenu from './components/header/menuMobile';
 import MobileSize from './components/general/WidthChecker';
 

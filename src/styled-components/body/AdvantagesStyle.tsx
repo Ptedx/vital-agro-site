@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const AdvantageStyle = styled.div`
     padding: 10px 0;
-    background: linear-gradient(#3677b7, #17265e);
     width: 100%;
     display: flex;
     justify-content: center;
@@ -75,10 +74,6 @@ export const AdvantageSubItem = styled.div<SubItemProps>`
     }
     @media (max-width: 768px) {
         width: 100%;
-        border-radius: 5px 5px 0 0;
-
-        &:nth-child(2){
-        border-radius: 0 0 5px 5px;
-    }
+        border-radius: 5px;
     }
 `
