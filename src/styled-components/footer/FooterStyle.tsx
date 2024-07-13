@@ -30,7 +30,7 @@ const FooterStyle = styled.div`
     }
     @media (max-width: 570px) {
        justify-content: center;
-       gap: 25px;
+       gap: 15px;
     }
 `
 

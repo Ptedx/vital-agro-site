@@ -32,6 +32,10 @@ const ButtonStyle = styled.div<ButtonStyleProps>`
     &:active{
         background-color: #b2c331;
     }
+
+    @media (max-width:768px) {
+        color: 'white';
+    }
 `
 
 export default ButtonStyle

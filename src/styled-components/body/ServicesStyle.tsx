@@ -8,7 +8,7 @@ export const ServicesStyle = styled.div`
     align-items: center;
     flex-direction: column;
     text-align: center;
-    padding: 60px;
+    padding: 40px 0;
     border-radius: 10px 10px 0 0;
     h1{
         padding-bottom:20px;
@@ -63,8 +63,9 @@ export const ServiceCard = styled.button<ServiceItemProps>`
         border: none;
         color: white;
         font-size: 24px;
-
-    &:hover{
+   
+    @media (min-width:769px) {
+        &:hover{
         transform: translateY(-5px);
         transition: 0.5s;
         cursor: pointer;
@@ -72,10 +73,10 @@ export const ServiceCard = styled.button<ServiceItemProps>`
             cursor: pointer;
         }
     }
-
+    }
     @media (max-width:768px) {
-        width: 100%;
-        margin-top: 10px;
+        width: 90%;
+        margin-top: 15px;
         & > p{
             font-size: 30px;
         }
@@ -105,19 +106,19 @@ export const HiddenDiv = styled.div<HiddenProps>`
     display: ${({hide = true})=>hide ? 'none' : 'block'};
     background-color: red;
     padding: 25px;
-    width: 100%;
+    width: 90%;
 `;
 
 export const HiddenDiv2 = styled.div<HiddenProps>`
     display: ${({hide = true})=>hide ? 'none' : 'block'};
     background-color: blue;
     padding: 25px;
-    width: 100%;
+    width: 90%;
 `;
 
 export const HiddenDiv3 = styled.div<HiddenProps>`
     display: ${({hide = true})=>hide ? 'none' : 'block'};
     background-color: green;
     padding: 25px;
-    width: 100%;
+    width: 90s%;
 `;
