@@ -120,5 +120,5 @@ export const HiddenDiv3 = styled.div<HiddenProps>`
     display: ${({hide = true})=>hide ? 'none' : 'block'};
     background-color: green;
     padding: 25px;
-    width: 90s%;
+    width: 90%;
 `;
