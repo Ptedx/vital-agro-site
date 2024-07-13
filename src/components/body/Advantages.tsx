@@ -18,7 +18,7 @@ const Advantages = ()=>{
                 </AdvantageSubItem>
             </AdvantageCard>
             <AdvantageCard>
-                <AdvantageSubItem bg="/img/Layout_2.png">
+                <AdvantageSubItem bg="/img/Layout_2_oficial.png">
                     <h1>Cuidados Dedicados e Carinhosos</h1>
                     <p>Criamos um ambiente seguro e acolhedor para que seu pet se sinta amado e tranquilo, recebendo um atendimento excepcional.</p>
                 </AdvantageSubItem>

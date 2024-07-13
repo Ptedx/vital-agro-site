@@ -88,37 +88,43 @@ export const ServiceCards = styled.div`
     justify-content: center;
     align-items: center;
     @media (max-width:768px) {
+        &> div{
+            width: 90%;
+        }
         flex-direction: column;
         flex-wrap:wrap;
     }
 `
 
 interface HiddenProps {
-    hide?: boolean
+    hide: boolean
 }
 
 export const HiddenDivGeneral = styled.div`
     width: 100%;
-    color: white;
 `
 
-export const HiddenDiv = styled.div<HiddenProps>`
-    display: ${({hide = true})=>hide ? 'none' : 'block'};
-    background-color: red;
-    padding: 25px;
-    width: 90%;
+export const HiddenDivStyle = styled.div<HiddenProps>`
+    display: ${({hide = true})=>hide ? 'none' : 'flex'};
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 80px 25px;
+    border-radius: 10px;
+    width: 100%;
+    color: white;
+`;
+export const HiddenDiv1Style = styled.div`
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 `;
 
-export const HiddenDiv2 = styled.div<HiddenProps>`
-    display: ${({hide = true})=>hide ? 'none' : 'block'};
-    background-color: blue;
-    padding: 25px;
-    width: 90%;
+export const HiddenDiv2Style = styled.div`
+    width: 100%;
 `;
 
-export const HiddenDiv3 = styled.div<HiddenProps>`
-    display: ${({hide = true})=>hide ? 'none' : 'block'};
-    background-color: green;
-    padding: 25px;
-    width: 90%;
+export const HiddenDiv3Style = styled.div`
+    width: 100%;
 `;
