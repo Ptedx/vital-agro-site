@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const FAQStyle = styled.div`
    display: flex;
    justify-content: center;
-   align-items: start;
+   align-items: center;
    flex-direction: column;
    width: 100%;
    padding: 10px 0 20px 0;
