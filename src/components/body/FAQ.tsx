@@ -1,5 +1,6 @@
 import {  useState } from "react";
 import {Answer, FAQStyle, Question, QuestionSectionStyle} from "../../styled-components/body/FaqSection";
+import SpecText from "../../styled-components/general/SpecialText";
 
 interface QuestSectionProps {
     quest: string,
@@ -33,7 +34,7 @@ const QuestionSection= ({quest, answer}: QuestSectionProps)=>{
 export const FAQ = ()=>{
     return(
         <FAQStyle id="doubts">
-            <h1>Ficou alguma dúvida?</h1>
+            <h1>Ficou alguma <SpecText>dúvida</SpecText>?</h1>
             <QuestionSection
                 quest="+ Quais serviços estão inclusos no banho?"
                 answer={["O banho inclui corte de unha e limpeza de orelhas. Esses serviços são realizados de acordo com a aceitação do seu pet."]}

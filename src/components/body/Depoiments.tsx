@@ -7,6 +7,7 @@ import 'swiper/css/virtual'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y, Virtual, Autoplay } from 'swiper/modules';
 import MobileSize from "../general/WidthChecker";
+import SpecText from "../../styled-components/general/SpecialText";
 
 const Depoiments = () => {
 
@@ -26,7 +27,7 @@ const Depoiments = () => {
     ]
     return (
         <SectionDepoimentStyle>
-            <h1>Hall da fama</h1>
+            <h1>Confira algumas de nossas <SpecText bg={true}>estrelas</SpecText></h1>
             <Swiper
                 modules={[Navigation, Pagination, Scrollbar, A11y, Virtual, Autoplay]}
                 slidesPerView={MobileSize(768) ? 2: 3}
@@ -38,7 +39,7 @@ const Depoiments = () => {
                 {slides.map((slide)=>(                    
                     <SwiperSlide key={slide.id}>
                         <SwiperItem>
-                            <img src={slide.content} width="100%" alt={"Doggo"} />
+                            <img src={slide.content} width="100%" alt={`Doggo${slide.id}`} />
                         </SwiperItem>
                     </SwiperSlide>
                 ))}

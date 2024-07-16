@@ -1,6 +1,7 @@
 import {AdvantageStyle, AdvantageCard, AdvantageSubItem} from "../../styled-components/body/AdvantagesStyle"
 import ButtonStyle from "../../styled-components/general/Button"
 import Light from "../../styled-components/general/Light"
+import SpecText from "../../styled-components/general/SpecialText"
 
 const Advantages = ()=>{
 
@@ -10,7 +11,7 @@ const Advantages = ()=>{
                 <AdvantageSubItem bg="/img/doggo_bath.jpg">
                 </AdvantageSubItem>
                 <AdvantageSubItem bg="/img/Layout_1.png">
-                    <h1>Higiene Excepcional para seu Pet</h1>
+                    <h1>Higiene <SpecText >Excepcional</SpecText> para seu Pet</h1>
                     <p>Garantimos uma experiência relaxante e cuidadosa, contribuindo para o bem-estar geral do seu amigo de quatro patas.</p>
                     <ButtonStyle>
                         <a target="_blank" rel="noopener noreferrer" href="https://api.whatsapp.com/send?phone=5561982360999&text=Ol%C3%A1!%20Vim%20aqui%20atrav%C3%A9s%20do%20site%20agendar%20uma%20consulta%20na%20Vital%20Agro%20%20%20:)">AGENDAR AGORA</a>
@@ -19,7 +20,7 @@ const Advantages = ()=>{
             </AdvantageCard>
             <AdvantageCard>
                 <AdvantageSubItem bg="/img/Layout_2_oficial.png">
-                    <h1>Cuidados Dedicados e Carinhosos</h1>
+                    <h1>Cuidados Dedicados e <SpecText bg={true}>Carinhosos</SpecText></h1>
                     <p>Criamos um ambiente seguro e acolhedor para que seu pet se sinta amado e tranquilo, recebendo um atendimento excepcional.</p>
                 </AdvantageSubItem>
                 <AdvantageSubItem bg="/img/doggo_care.gif">

@@ -7,6 +7,7 @@ export const SectionDepoimentStyle = styled.div`
     text-align: center;
     h1{
         padding: 20px 15px;
+        font-size: 45px;
     }
 ` 
 

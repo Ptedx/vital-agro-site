@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { ServiceItem, ServiceItems, ServicesStyle, ServiceCard, HiddenDivGeneral, ServiceCards, } from "../../styled-components/body/ServicesStyle";
+import SpecText from "../../styled-components/general/SpecialText";
 
 const Services = () => {
   const [isVisible, setisVisible] = useState<number | null>(null);
@@ -29,8 +30,7 @@ const Services = () => {
   return (
     <ServicesStyle>
       <h1>
-        Confira os serviços que oferecemos para garantir o bem-estar e
-        felicidade do seu pet:
+        Confira os serviços que oferecemos para garantir o <SpecText>bem-estar</SpecText> e <SpecText>felicidade</SpecText> do seu pet:
       </h1>
       <ServiceItems>
         <ServiceItem>

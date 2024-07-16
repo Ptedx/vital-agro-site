@@ -11,7 +11,7 @@ export const MainScreenStyle = styled.div`
     padding: 15px;
 
     @media (min-width: 1200px) {
-        max-width: 1400px;
+        max-width: 1920px;
         margin: 0 auto;
         margin-top: 80px;
     }
@@ -30,19 +30,23 @@ export const MainItem = styled.div`
         font-size: clamp(1em, 3vw + 1em, 3em);
         margin-bottom: 40px;
     }
-    span{
-        color:#c5d937;
-    }
     p{
-        margin-bottom: 40px;
+        margin-bottom: 10px;
     }
 
+    @media (min-width: 1400px) {
+        h1{
+            font-size: clamp(2em, 4vw + 2em, 4em);
+            margin-bottom: 40px;
+        }
+        p{
+            font-size: 20px;
+            margin-bottom:40px;
+        }
+    }
     @media (max-width: 992px) {
         h1{
             margin-bottom: 20px;
-        }
-        p{
-            margin-bottom: 10px;
         }
     }
     @media (max-width: 768px) {

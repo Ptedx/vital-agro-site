@@ -57,7 +57,7 @@ export const AdvantageSubItem = styled.div<SubItemProps>`
     }
     p{
         font-size: 22px;
-        margin-bottom: 5px;
+        margin-bottom: 10px;
     }
     &:nth-child(2){
         border-radius: 0 5px 5px 0;
@@ -75,5 +75,12 @@ export const AdvantageSubItem = styled.div<SubItemProps>`
     @media (max-width: 768px) {
         width: 100%;
         border-radius: 5px;
+
+        h1{
+            margin-bottom: 50px;
+        }
+        p{
+            padding: 0 15px;
+        }
     }
 `

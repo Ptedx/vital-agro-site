@@ -61,7 +61,7 @@ export const MenuContent = styled.div`
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    transition: opacity 0.2s ease, max-height 0.5s ease;
+    transition: opacity 0.1s ease, max-height 0.5s ease;
     border-radius: 15px;
 
     &.clicked{
