@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 const LocStyle = styled.div`
-    background-color:#f9f9f9;
+    background-color:rgb(240, 240, 240);
+    padding: 20px 0;
     text-align: center;
     border-radius: 10px;
     h1{

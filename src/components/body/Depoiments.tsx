@@ -26,7 +26,7 @@ const Depoiments = () => {
     ]
     return (
         <SectionDepoimentStyle>
-            <h1>Galeria</h1>
+            <h1>Hall da fama</h1>
             <Swiper
                 modules={[Navigation, Pagination, Scrollbar, A11y, Virtual, Autoplay]}
                 slidesPerView={MobileSize(768) ? 2: 3}

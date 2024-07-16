@@ -7,8 +7,10 @@ const Container = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 1200px;
     margin: 0 auto;
+    @media (min-width: 1200px) {
+        max-width: 1920px;
+    }
 `
 
 export default Container

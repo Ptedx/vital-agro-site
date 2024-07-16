@@ -68,10 +68,6 @@ export const ServiceCard = styled.button<ServiceItemProps>`
         &:hover{
         transform: translateY(-5px);
         transition: 0.5s;
-        cursor: pointer;
-        p{
-            cursor: pointer;
-        }
     }
     }
     @media (max-width:768px) {

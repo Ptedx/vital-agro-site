@@ -27,8 +27,4 @@ export const MenuDesktopStyle = styled.div`
     img{
         margin-top: 15px;
     }
-    @media (min-width: 1200px) {
-        max-width: 1400px;
-        border-radius: 0 0 10px 10px;
-}
 `

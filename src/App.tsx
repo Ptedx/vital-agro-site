@@ -14,16 +14,16 @@ import MobileSize from './components/general/WidthChecker';
 function App() {
   return (
     <>
-      {MobileSize(768) ? <MobileMenu />: <MenuDesktop />}  
-      <MainScreen />
       <Container>
+        {MobileSize(768) ? <MobileMenu />: <MenuDesktop />}  
+        <MainScreen />
         <Services />
         <Advantages />
         <Depoiments />
         <Loc />
         <FAQ />
-      </Container>
         <Footer />
+      </Container>
     </>
   );
 }

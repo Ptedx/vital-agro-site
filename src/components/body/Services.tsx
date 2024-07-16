@@ -1,7 +1,5 @@
 import { useState } from "react";
 import { ServiceItem, ServiceItems, ServicesStyle, ServiceCard, HiddenDivGeneral, ServiceCards, } from "../../styled-components/body/ServicesStyle";
-import { HiddenDiv1, HiddenDiv2, HiddenDiv3 } from "./HidenDivs";
-import MobileSize from "../general/WidthChecker";
 
 const Services = () => {
   const [isVisible, setisVisible] = useState<number | null>(null);
@@ -11,25 +9,16 @@ const Services = () => {
       id: 1,
       bg: "/img/estetica.jpg",
       p: ["Estética animal", "Banho e tosa"],
-      div: (
-        <HiddenDiv1 hide={isVisible !== 1} />
-      ),
     },
     {
       id: 2,
       bg: "/img/taxi_dog.jpg",
       p: ["Serviços de", "Taxi Shop"],
-      div: (
-        <HiddenDiv2 hide={isVisible !== 2} />
-      ),
     },
     {
       id: 3,
       bg: "/img/pet-dia-a-dia.jpg",
       p: ["Produtos para o", "dia-a-dia"],
-      div: (
-        <HiddenDiv3 hide={isVisible !== 3} />
-      ),
     },
   ];
 
@@ -56,13 +45,11 @@ const Services = () => {
                   <p>{paragraph}</p>
                 ))}
               </ServiceCard>
-              {MobileSize(768) && service.div}
             </ServiceCards>
           ))}
         </ServiceItem>
         {services.map((service) => (
           <HiddenDivGeneral key={service.id}>
-            {MobileSize(768) ? "" : service.div}
           </HiddenDivGeneral>
         ))}
       </ServiceItems>
