@@ -1,13 +1,13 @@
-import { SectionDepoimentStyle, SwiperItem } from "../../styled-components/body/DepoimentStyle";
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
+import { SectionDepoimentStyle, SwiperItem } from "../../styled-components/body/DepoimentStyle"
+import 'swiper/css'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
+import 'swiper/css/scrollbar'
 import 'swiper/css/virtual'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y, Virtual, Autoplay } from 'swiper/modules';
-import MobileSize from "../general/WidthChecker";
-import SpecText from "../../styled-components/general/SpecialText";
+import MobileSize from "../general/WidthChecker"
+import SpecText from "../../styled-components/general/SpecialText"
 
 const Depoiments = () => {
 

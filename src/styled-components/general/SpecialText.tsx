@@ -7,7 +7,7 @@ interface SpectTextProps{
 const SpecText = styled.div<SpectTextProps>`
     display: inline;
     border-radius: 45px;
-    padding: 0 10px;
+    padding: ${({bg = false})=> bg? '0 10px': '0'};
     background-color: ${({bg = false})=>bg ? "#3677b7":''} ;
     color:#c5d937;
 `
