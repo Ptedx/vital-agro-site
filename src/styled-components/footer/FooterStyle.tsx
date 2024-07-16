@@ -15,7 +15,6 @@ const FooterStyle = styled.div`
 
     @media (min-width: 1200px) {
         max-width: 1920px;
-        border-radius: 10px 10px 0 0;
         margin: 0 auto;
     }
     @media (max-width: 992px) {

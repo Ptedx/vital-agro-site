@@ -22,8 +22,8 @@ function App() {
         <Depoiments />
         <Loc />
         <FAQ />
-        <Footer />
       </Container>
+        <Footer />
     </>
   );
 }
