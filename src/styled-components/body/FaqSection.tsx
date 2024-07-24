@@ -21,9 +21,12 @@ export const Question = styled.button`
     margin-bottom: 10px;
     padding: 10px 5px;
     cursor: pointer;
+    
     & > p{
         cursor: pointer;
         font-size: 16px;
+        color: black;
+        font-weight: bold;
     }
 
     &:hover{
