@@ -1,13 +1,21 @@
-FROM node:18
+FROM node:latest
 
-WORKDIR /app
-
-COPY package*.json ./
-
-RUN npm install
+WORKDIR /tmp/react
 
 COPY . .
 
-EXPOSE 3000
+RUN rm -rf node_modules
 
-CMD ["npm", "start"]
+RUN npm install
+
+RUN npm run build
+
+RUN mkdir -p /var/www/html
+
+RUN mv build/* /var/www/html
+
+VOLUME /var/www/html
+
+WORKDIR /
+
+RUN rm -rf /tmp/react
