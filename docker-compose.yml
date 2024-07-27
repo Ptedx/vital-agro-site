@@ -1,0 +1,19 @@
+services:
+  front:
+    container_name: vital-image
+    build: .
+    volumes:
+      - vital-volume:/var/www/html
+
+  nginx:
+    container_name: vital-nginx
+    build: ./ngnix
+    depends_on:
+      - front
+    volumes:
+      - vital-volume:/var/www/html
+    ports:
+      - 80:80
+
+volumes:
+  vital-volume:
