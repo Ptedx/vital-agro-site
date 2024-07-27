@@ -1,13 +1,13 @@
 services:
   front:
     container_name: vital-image
-    build: .
+    image: vinicosta37/vital-image:latest
     volumes:
       - vital-volume:/var/www/html
 
   nginx:
     container_name: vital-nginx
-    build: ./ngnix
+    image: vinicosta37/vital-image-nginx:latest
     depends_on:
       - front
     volumes:
