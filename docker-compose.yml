@@ -1,7 +1,7 @@
 services:
   front:
     container_name: vital-image
-    image: vinicosta37/vital-image:latest
+    image: vinicosta37/vital-image:1.0
     volumes:
       - vital-volume:/var/www/html
 
