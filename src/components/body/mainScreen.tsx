@@ -11,7 +11,7 @@ const MainScreen = ()=>{
                 <p>Na Vital Agro, cuidamos do seu amigo peludo como um verdadeiro membro da família.
                 Agende agora e veja seu pet mais feliz e charmoso!</p>
                 <ButtonStyle>
-                    <a target="_blank" rel="noopener noreferrer" href="https://api.whatsapp.com/send?phone=5561982360999&text=Ol%C3%A1!%20Vim%20aqui%20atrav%C3%A9s%20do%20site%20agendar%20uma%20consulta%20na%20Vital%20Agro%20%20%20:)">AGENDAR AGORA</a>
+                    <a target="_blank" rel="noopener noreferrer" href="/">AGENDAR AGORA</a>
                 </ButtonStyle>
             </MainItem>
             <MainItem>

@@ -6,6 +6,7 @@ const Loc = ()=>{
         <LocStyle >
             <h1 id="loc">Onde nos encontrar?</h1>
             <iframe
+                title="maps"
                 loading="lazy"
                 allowFullScreen
                 referrerPolicy="no-referrer-when-downgrade"
